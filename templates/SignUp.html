@@ -1,0 +1,42 @@
+{% if messg %}
+<script>
+    alert('{{ messg }}')
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body class="text-center">
+	<div class="col-sm-11 d-flex justify-content-center">
+    <form action="/EzStudyWeb/DoneSignUp/" method="post" class="form-signup">
+        {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+      Name:
+      <label for="inputName" class="sr-only">Email address</label>
+      <input type="text" name="name" style="width: 175%" id="inputName" class="form-control" placeholder="Name" required="" autofocus="">
+      Email :
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" name="email" style="width: 175%" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      Password :
+      <input type="password" name="password" style="width: 175%" id="inputPassword" class="form-control" placeholder="Password" required="">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+     <a>
+      <button class="btn btn-lg btn-primary btn-block" style="width: 175%"<input type="submit" value="SignUp">Register</button>
+  </a>
+    </form>
+</div>
+
+
+</body>
+</html>

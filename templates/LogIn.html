@@ -1,3 +1,8 @@
+{% if messg %}
+<script>
+    alert('{{ messg }}')
+</script>
+{% endif %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,20 +13,22 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
 <body class="text-center">
-	<div class="col-sm-11 d-flex justify-content-center">
-    <form class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
+	<form action="/EzStudyWeb/Homepage/" method="post" class="form-signin">
+      {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal">Log In</h1>
+      Email :
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" style="width: 175%" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <input type="email" name="email" style="width: 175%" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" style="width: 175%" id="inputPassword" class="form-control" placeholder="Password" required="">
+      Password :
+      <input type="password" name="password" style="width: 175%" id="inputPassword" class="form-control" placeholder="Password" required="">
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-     <a
-      <button class="btn btn-lg btn-primary btn-block" style="width: 175%" type="submit" href="HomePage (logged in) 2.html">Log in</button>
+     <a>
+       <button class="btn btn-lg btn-primary btn-block" style="width: 175%" <input type="submit" value="Sign In">Log in</button>
   </a>
     </form>
 </div>

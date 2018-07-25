@@ -27,7 +27,7 @@
   </div>
     <form class="form-inline my-2 my-lg-0">
       <a
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" href="log in.html">Log In</button>
+      <a onclick="location.href='{% url 'SignIn' %}'" class="text-white">Sign In</a>
     </a>
     </form>
 </nav>
@@ -86,7 +86,7 @@
             </div>
   <div class="card bg-primary text-white text-center p-3">
     <blockquote class="blockquote mb-0">
-      <a href="SignUp.html" class="text-white">Sign Up and Name Your Assistant</a>
+       <a onclick="location.href='{% url 'register' %}'" class="text-white">Sign Up and Name the Asistant</a>
     </blockquote>
   </div>
   <div class="card text-center">
