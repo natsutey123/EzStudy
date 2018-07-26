@@ -26,12 +26,10 @@ def register(request):
     return render(request, "SignUp.html")
 
 def homepage(request):
-
     email = request.POST.get('email')
     password = request.POST.get('password')
     try:
         user = aute.sign_in_with_email_and_password(email, password)
-
     except:
         messages = "invalid users"
         return render(request, "LogIn.html", {"messg": messages})
@@ -49,13 +47,14 @@ def DoneSignUp(request):
     name = request.POST.get('name')
     email = request.POST.get('email')
     password = request.POST.get('password')
-
-
-    user = aute.create_user_with_email_and_password(email, password)
-    uid = user['localId']
-    data = {"name": name, "status": "1"}
-    database.child("users").child(uid).child("details").set(data)
-
+    try:
+        user = aute.create_user_with_email_and_password(email, password)
+        uid = user['localId']
+        data = {"name": name, "status": "1"}
+        database.child("users").child(uid).child("details").set(data)
+    except:
+        message = "Unable to create account try again"
+        return render(request, "signup.html", {"messg": message})
 
     return render(request, "Firstpage.html")
 
