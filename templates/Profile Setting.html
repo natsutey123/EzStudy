@@ -107,12 +107,12 @@
       <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i>Done</button>
     </div>
     <a
-    <button class=" btn btn-primary mr-sm-2" href="HomePage (logged in) 2.html"><i class="fas fa-undo"></i>Back</button>
+    <button class=" btn btn-primary mr-sm-2" onclick="location.href='{% url 'homepage' %}'"><i class="fas fa-undo"></i>Back</button>
 	</a>
   </div>
   <div class="form-group row">
     <a
-    <button type="submit" class="btn btn-secondary" href="HomePage.html">Log Out</button>
+    <button type="submit" class="btn btn-secondary" onclick="location.href='{% url 'demo' %}'">Log Out</button>
   </a>
   </div>
 </form>
