@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="dd0b3e44-dda3-4440-a980-f6e8f7c1d90f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
 =======
     <list default="true" id="dd0b3e44-dda3-4440-a980-f6e8f7c1d90f" name="Default" comment="" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+    <list default="true" id="dd0b3e44-dda3-4440-a980-f6e8f7c1d90f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/LogIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LogIn.html" afterDir="false" />
+    </list>
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,19 +30,20 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1" />
+          <entry key="html" value="44" />
           <entry key="py" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="44" />
           <entry key="Python" value="35" />
         </counts>
       </usages-collector>
@@ -78,7 +85,7 @@
       <file leaf-file-name="SignUp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/SignUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="391">
               <caret line="34" column="106" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -114,11 +121,20 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="LogIn.html" pinned="false" current-in-tab="false">
+=======
+      <file pinned="false" current-in-tab="true">
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
         <entry file="file://$PROJECT_DIR$/templates/LogIn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="391">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,6 +157,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,6 +168,13 @@
             <state relative-caret-position="1054">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -182,7 +206,6 @@
         <option value="$PROJECT_DIR$/templates/NameAsistant.html" />
         <option value="$PROJECT_DIR$/EzStudy/urls.py" />
         <option value="$PROJECT_DIR$/templates/Register.html" />
-        <option value="$PROJECT_DIR$/templates/LogIn.html" />
         <option value="$PROJECT_DIR$/templates/SignUp.html" />
         <option value="$PROJECT_DIR$/templates/Firstpage.html" />
         <option value="$PROJECT_DIR$/templates/Homepage.html" />
@@ -191,6 +214,7 @@
         <option value="$PROJECT_DIR$/EzStudyWeb/urls.py" />
         <option value="$PROJECT_DIR$/templates/Library.html" />
         <option value="$PROJECT_DIR$/EzStudyWeb/views.py" />
+        <option value="$PROJECT_DIR$/templates/LogIn.html" />
       </list>
     </option>
   </component>
@@ -204,8 +228,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="48" />
+    <option name="y" value="-9" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -307,8 +331,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -460,8 +488,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/SignUp.html">
+    <entry file="file://$PROJECT_DIR$/templates/asistant.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="272">
           <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
@@ -472,11 +501,16 @@
             <element signature="n#style#0;n#button#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+        <state relative-caret-position="340">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Profile Setting.html">
+    <entry file="file://$PROJECT_DIR$/templates/Library.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="408">
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
@@ -484,31 +518,38 @@
         <state relative-caret-position="1853">
           <caret line="109" column="85" selection-start-line="109" selection-start-column="85" selection-end-line="109" selection-end-column="85" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/asistant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Library.html">
-      <provider selected="true" editor-type-id="text-editor">
+=======
         <state relative-caret-position="374">
           <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/LogIn.html">
+    <entry file="file://$PROJECT_DIR$/templates/Homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Firstpage.html">
+    <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Profile Setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="85" selection-start-line="109" selection-start-column="85" selection-end-line="109" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="34">
@@ -518,13 +559,21 @@
           </folding>
 =======
         <state relative-caret-position="391">
+<<<<<<< HEAD
           <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+          <caret line="34" column="106" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Homepage.html">
+    <entry file="file://$PROJECT_DIR$/templates/Firstpage.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="578">
           <caret line="34" column="106" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
@@ -535,11 +584,16 @@
         <state relative-caret-position="408">
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+        <state relative-caret-position="391">
+          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/LogIn.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="-712">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -547,8 +601,14 @@
         <state relative-caret-position="1054">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
 >>>>>>> 018a37e5ea8a509be7e9c1f401f56c4e55ad06fc
+=======
+        <state relative-caret-position="391">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+>>>>>>> 1d8d3636c37e0fd34e88b06def29bf58ff0de208
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
