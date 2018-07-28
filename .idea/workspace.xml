@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd0b3e44-dda3-4440-a980-f6e8f7c1d90f" name="Default" comment="" />
+    <list default="true" id="dd0b3e44-dda3-4440-a980-f6e8f7c1d90f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +139,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-712">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -486,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EzStudyWeb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-712">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
