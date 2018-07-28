@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import pyrebase
 from django.contrib import auth
+import dialogflow_v2
 
 config = {
     'apiKey': "AIzaSyBMBWE1mZLNMvlmy5xzFyQY3BttMkJjc7I",
