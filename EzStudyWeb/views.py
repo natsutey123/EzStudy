@@ -1,10 +1,7 @@
 from django.shortcuts import render
 import pyrebase
 from django.contrib import auth
-<<<<<<< HEAD
-=======
-
->>>>>>> d207ff68128993ea5be7c46a3158c137d9f8cae9
+import dialogflow
 
 config = {
     'apiKey': "AIzaSyBMBWE1mZLNMvlmy5xzFyQY3BttMkJjc7I",
@@ -19,6 +16,8 @@ firebase = pyrebase.initialize_app(config)
 
 aute = firebase.auth()
 database = firebase.database()
+
+
 
 def demopage(request):
     return render(request, "Firstpage.html")
