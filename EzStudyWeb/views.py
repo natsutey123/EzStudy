@@ -14,7 +14,7 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 
-aute = firebase.auth()
+auth_firebase = firebase.auth()
 database = firebase.database()
 
 
@@ -32,7 +32,7 @@ def homepage(request):
     email = request.POST.get('email')
     password = request.POST.get('password')
     try:
-        user = aute.sign_in_with_email_and_password(email, password)
+        user = auth_firebase.sign_in_with_email_and_password(email, password)
     except:
         messages = "invalid users"
         return render(request, "LogIn.html", {"messg": messages})
@@ -51,13 +51,13 @@ def DoneSignUp(request):
     email = request.POST.get('email')
     password = request.POST.get('password')
     try:
-        user = aute.create_user_with_email_and_password(email, password)
+        user = auth_firebase.create_user_with_email_and_password(email, password)
         uid = user['localId']
         data = {"name": name, "status": "1"}
         database.child("users").child(uid).child("details").set(data)
     except:
         message = "Unable to create account try again"
-        return render(request, "signup.html", {"messg": mesSsage})
+        return render(request, "signup.html", {"messg": message})
 
     return render(request, "Firstpage.html")
 
