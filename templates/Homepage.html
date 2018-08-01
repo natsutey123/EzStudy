@@ -14,23 +14,20 @@
 <body>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">EzStudy</a>
+  <a class="navbar-brand" href="#"><i class="fas fa-chalkboard-teacher mr-2"></i>EzStudy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link disabled text-dark" onclick="location.href='{% url 'library' %}'">Library</a>
+          <a class="nav-link active text-dark" onclick="location.href='{% url 'library' %}'"><button type="button" class="btn btn-outline-info">Library</button></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg">
       <h5 class="mr-sm-2">Welcome, {{e}}</h5>
-      <a class="nav-link" onclick="location.href='{% url 'demo' %}'"><button type="button" class="btn btn-outline-info">Log Out</button></a>
+      <a class="nav-link" onclick="location.href='{% url 'demo' %}'"><button type="button" class="btn btn-outline-danger">Log Out</button></a>
 
     </form>
   </div>
@@ -80,7 +77,7 @@
             </div>
     <div class="d-flex justify-content-centertext-white text-center d-flex justify-content-center">
     	<button class="btn btn-primary d-flex justify-content-center">
-      		<a onclick="location.href='{% url 'Ai' %}'" class="text-white"><i class="fab fa-android"></i>My assistant, Wayne</a>
+      		<a onclick="location.href='{% url 'Ai' %}'" class="text-white"><i class="fab fa-android mr-2"></i>My assistant, Wayne</a>
     </button>
   </div>
 
