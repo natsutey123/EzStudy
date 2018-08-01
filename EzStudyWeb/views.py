@@ -57,7 +57,7 @@ def DoneSignUp(request):
         database.child("users").child(uid).child("details").set(data)
     except:
         message = "Unable to create account try again"
-        return render(request, "signup.html", {"messg": message})
+        return render(request, "signup.html", {"messg": mesSsage})
 
     return render(request, "Firstpage.html")
 
