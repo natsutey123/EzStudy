@@ -11,6 +11,9 @@ urlpatterns = [
     path('Profile/', views.Profile, name="profile"),
     path('Register', views.register, name="register"),
     path('DoneSignUp/', views.DoneSignUp, name="DoneSignUp"),
-    path('Library/', views.Library, name="library")
+    path('Library/', views.Library, name="library"),
+    path('api/helloworld', views.helloWorld),
+    path('api/hellopost', views.helloPost),
+    path('api/hellojson', views.helloJson)
 
 ]

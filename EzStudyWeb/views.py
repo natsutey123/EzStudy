@@ -1,7 +1,8 @@
 from django.shortcuts import render
 import pyrebase
 from django.contrib import auth
-
+from django.http import JsonResponse
+import json
 
 config = {
     'apiKey': "AIzaSyBMBWE1mZLNMvlmy5xzFyQY3BttMkJjc7I",
@@ -70,33 +71,36 @@ def Profile(request):
 def Library(request):
     return render(request, "Library.html")
 
-def detect_intent_texts(project_id, session_id, texts, language_code):
-    """Returns the result of detect intent with texts as inputs.
+def helloWorld(request):
+    data = {
+        'name': 'Vitor',
+        'location': 'Finland',
+        'is_active': True,
+        'count': 28
+    }
+    return JsonResponse(data)
 
-    Using the same `session_id` between requests allows continuation
-    of the conversaion."""
-    import dialogflow_v2 as dialogflow
-    session_client = dialogflow.SessionsClient()
+def helloPost(request):
+    if request.method == 'GET':
+        data = {
+            'name': request.GET['name'],
+            'location': request.GET['location'],
+            'is_active': True,
+            'count': 28
+        }
+        return JsonResponse(data)
+    return JsonResponse({})
 
-    session = session_client.session_path(project_id, session_id)
-    print('Session path: {}\n'.format(session))
-
-    for text in texts:
-        text_input = dialogflow.types.TextInput(
-            text=text, language_code=language_code)
-
-        query_input = dialogflow.types.QueryInput(text=text_input)
-
-        response = session_client.detect_intent(
-            session=session, query_input=query_input)
-
-        print('=' * 20)
-        print('Query text: {}'.format(response.query_result.query_text))
-        print('Detected intent: {} (confidence: {})\n'.format(
-            response.query_result.intent.display_name,
-            response.query_result.intent_detection_confidence))
-        print('Fulfillment text: {}\n'.format(
-            response.query_result.fulfillment_text))
-
-
+def helloJson(request):
+    if request.method == 'GET':
+        if request.body:
+            json_data = json.loads(request.body)
+        data = {
+            'name': json_data['data']['name'],
+            'location': json_data['data']['location'],
+            'is_active': True,
+            'count': 28
+        }
+        return JsonResponse(data)
+    return JsonResponse({})
 
