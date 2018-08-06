@@ -42,6 +42,7 @@ def homepage(request):
     print(user['idToken'])
     session_id = user['idToken']
     request.session['uid'] = str(session_id)
+
     return render(request, "Homepage.html", {"e": email})
 
 def LogOut(request):
@@ -70,7 +71,8 @@ def Profile(request):
     return render(request, "Profile Setting.html")
 
 def Library(request):
-    return render(request, "Library.html")
+
+    return render(request, "Library.html",)
 
 def helloWorld(request):
     data = {
@@ -117,3 +119,16 @@ def udemyShowCourse1(request):
     course_title = content_result['title']
     course_image = content_result['image_480x270']
     return HttpResponse(course_image)
+
+def udemySearchCourses(request):
+    r_searchcourse = requests.get('https://www.udemy.com/api-2.0/courses/?search=english&instructional_level=beginner&price=price-free',
+                               auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'),)
+    content = r_searchcourse.json()
+    content_data = content['results']
+    content_result = content_data[00]
+    course_urls = "https://www.udemy.com" + content_result['url']
+    course_title = content_result['title']
+
+    return HttpResponse("This is your best course" + '\n' +
+                        course_title + '\n' +
+                        course_urls)
