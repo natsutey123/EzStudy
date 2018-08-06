@@ -121,8 +121,10 @@ def udemyShowCourse1(request):
     return HttpResponse(course_image)
 
 def udemySearchCourses(request):
-    r_searchcourse = requests.get('https://www.udemy.com/api-2.0/courses/?search=english&instructional_level=beginner&price=price-free',
-                               auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'),)
+    requirement = {'search':'math','instructional_level':'beginner','price':'price-free'}
+    r_searchcourse = requests.get('https://www.udemy.com/api-2.0/courses/',
+                               auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'),
+                                  params=requirement)
     content = r_searchcourse.json()
     content_data = content['results']
     content_result = content_data[00]
