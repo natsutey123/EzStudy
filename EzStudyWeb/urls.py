@@ -12,11 +12,11 @@ urlpatterns = [
     path('Register', views.register, name="register"),
     path('DoneSignUp/', views.DoneSignUp, name="DoneSignUp"),
     path('Library/', views.Library, name="library"),
-    path('api/helloworld', views.helloWorld),
-    path('api/hellopost', views.helloPost),
-    path('api/hellojson', views.helloJson),
-    path('udemy/showcourse', views.udemyShowCourse1),
+    # path('api/helloworld', views.helloWorld),
+    # path('api/hellopost', views.helloPost),
+    # path('api/hellojson', views.helloJson),
+    # path('udemy/showcourse', views.udemyShowCourse1),
     path('udemy/searchcourses', views.udemySearchCourses),
-    path('webhook/', views.webhook, method=["POST"])
+    # path('webhook/', views.webhook, method=["POST"])
 
 ]
