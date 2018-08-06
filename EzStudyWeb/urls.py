@@ -15,6 +15,6 @@ urlpatterns = [
     path('api/helloworld', views.helloWorld),
     path('api/hellopost', views.helloPost),
     path('api/hellojson', views.helloJson),
-    path('udemy/showcourse', views.udemyShowCourse)
+    path('udemy/showcourse', views.udemyShowCourse1)
 
 ]

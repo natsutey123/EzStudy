@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import pyrebase
 from django.contrib import auth
-from django.http import JsonResponse
+from django.http import JsonResponse,HttpResponse
 import json
 import requests
 
@@ -105,7 +105,15 @@ def helloJson(request):
         return JsonResponse(data)
     return JsonResponse({})
 
-def udemyShowCourse(request):
-    r_auth = requests.get('https://www.udemy.com/api-2.0/courses', auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'))
-    content = r_auth.json()
-    return JsonResponse(content)
+def udemyShowCourse1(request):
+    requirement = {'ordering': 'most-reveiwed'}
+    r_showcourse = requests.get('https://www.udemy.com/api-2.0/courses/?ordering=most-reviewed&page=1&page_size=1',
+                                auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'),
+                                data=requirement)
+    content = r_showcourse.json()
+    content_data = content['results']
+    content_result = content_data[00]
+    course_urls = "https://www.udemy.com" + content_result['url']
+    course_title = content_result['title']
+    course_image = content_result['image_480x270']
+    return HttpResponse(course_image)
