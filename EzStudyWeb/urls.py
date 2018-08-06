@@ -14,6 +14,7 @@ urlpatterns = [
     path('Library/', views.Library, name="library"),
     path('api/helloworld', views.helloWorld),
     path('api/hellopost', views.helloPost),
-    path('api/hellojson', views.helloJson)
+    path('api/hellojson', views.helloJson),
+    path('udemy/showcourse', views.udemyShowCourse1)
 
 ]
