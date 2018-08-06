@@ -3,6 +3,7 @@ import pyrebase
 from django.contrib import auth
 from django.http import JsonResponse
 import json
+import requests
 
 config = {
     'apiKey': "AIzaSyBMBWE1mZLNMvlmy5xzFyQY3BttMkJjc7I",
@@ -104,3 +105,7 @@ def helloJson(request):
         return JsonResponse(data)
     return JsonResponse({})
 
+def udemyShowCourse(request):
+    r_auth = requests.get('https://www.udemy.com/api-2.0/courses', auth=('EvBrZjvwgbY6iXWujMJE1qnNrZTmaOnDVpC57Sl9', 'neaBg8yIevDFSIXZpKZix6QyksQ2707REavzABZ507HjLtlzKKiBdvoqyvVLXWb3DptFnj7D6fGTk3YUbpc1Qtaj6gvMm24S63lSQlq4qiMbzCwiI3tKtOoG6C22IKze'))
+    content = r_auth.json()
+    return JsonResponse(content)
