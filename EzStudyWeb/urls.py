@@ -16,7 +16,7 @@ urlpatterns = [
     # path('api/hellopost', views.helloPost),
     # path('api/hellojson', views.helloJson),
     # path('udemy/showcourse', views.udemyShowCourse1),
-    path('udemy/searchcourses', views.udemySearchCourses),
-    path('webhook/', views.webhook)
+    # path('udemy/searchcourses', views.udemySearchCourses),
+    path('webhook', views.webhook)
 
 ]
