@@ -4,6 +4,7 @@ from django.contrib import auth
 from django.http import JsonResponse,HttpResponse
 import json
 import requests
+from django.views.decorators.csrf import csrf_exempt
 
 from urllib.parse import urlparse, urlencode
 from urllib.request import urlopen, Request
@@ -130,19 +131,27 @@ def Library(request):
 #     return HttpResponse(course_image)
 
 
-app = Flask(__name__)
-def webhook():
-    req = request.get_json(silent=True, force=True)
+# app = Flask(__name__)
 
-    print("Request:")
-    print(json.dumps(req,indent=4))
-
-    res = processRequest(req)
-    res = json.dumps(res, indent=4)
-
-    r = make_response(res)
-    r.headers['Content-Type'] = 'application/json'
-    return r
+@csrf_exempt
+def webhook(request):
+    if request.method == 'POST':
+        if request.body:
+            json_data = json.loads(request.body)
+#
+#
+        return HttpResponse(request, "Hello World")
+    # req = request.get_json(silent=True, force=True)
+    #
+    # print("Request:")
+    # print(json.dumps(req,indent=4))
+    #
+    # res = processRequest(req)
+    # res = json.dumps(res, indent=4)
+    #
+    # r = make_response(res)
+    # r.headers['Content-Type'] = 'application/json'
+    # return r
 def processRequest(req):
     print("here I am....")
     print("starting processRequest...",req.get("queryResult").get("action"))
